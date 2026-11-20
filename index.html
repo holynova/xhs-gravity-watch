@@ -1,8 +1,39 @@
 <!doctype html>
-<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#28231f">
-<title>Gravity Court · 重力表盘</title><link rel="stylesheet" href="style.css">
-<main aria-label="重力互动物理表盘">
-  <div class="ambient"></div><div id="dial-mount"></div><button id="view" aria-label="切换手腕和表盘视角"></button>
-  <div id="stage"><img src="assets/wrist.webp" alt="阳光下佩戴黑色 Apple Watch 的手腕" draggable="false"><div id="glass"><canvas id="face" aria-label="随倾斜方向滚动的球"></canvas></div></div>
-  <aside class="tools"><div class="hint" id="hint" role="status">拖动改变重力 · 方向键微调</div><nav aria-label="表盘材质" id="materials"></nav><button id="tilt" hidden>启用体感</button></aside>
-</main><script src="gravity.js"></script><script src="watch.js"></script></html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#28231f" />
+    <title>Gravity Court · 重力表盘</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main aria-label="重力互动物理表盘">
+      <div class="ambient"></div>
+      <div id="dial-mount"></div>
+      <button id="view" aria-label="切换手腕和表盘视角"></button>
+      <div id="stage">
+        <img
+          src="assets/wrist.webp"
+          alt="阳光下佩戴黑色 Apple Watch 的手腕"
+          draggable="false"
+        />
+        <div id="glass">
+          <canvas id="face" aria-label="随倾斜方向滚动的球"></canvas>
+        </div>
+      </div>
+      <aside class="tools">
+        <div class="hint" id="hint" role="status">
+          拖动改变重力 · 方向键微调
+        </div>
+        <nav aria-label="表盘材质" id="materials"></nav>
+        <button id="tilt" hidden>启用体感</button>
+      </aside>
+    </main>
+    <script src="gravity.js"></script>
+    <script src="watch.js"></script>
+  </body>
+</html>
